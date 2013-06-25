@@ -4,7 +4,7 @@ title: Introduction
 group: navigation
 ---
 {% include JB/setup %}
-
+<p>My name is Lubomír Čuhel. I'm 23 year old IT student living in Prague and this is my personal blog and resume. My life is made of three parts: shool, work and baseball. Every part has got it's own section on this website.</p>
 <h2>New posts</h2>
 
 <ul class="posts">
