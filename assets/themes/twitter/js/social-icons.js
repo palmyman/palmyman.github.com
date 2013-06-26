@@ -11,4 +11,7 @@ $(document).ready(function(){
   	newsrc = newsrc.replace('color', 'black');
 	$(this).attr('src', newsrc);
   });
+  
+    $("p#hiding").delay(1500).slideUp(800);
+  
 });
