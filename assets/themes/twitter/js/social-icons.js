@@ -12,12 +12,14 @@ $(document).ready(function(){
 	  $(this).attr('src', newsrc);
   });
   
-  $("p#hiding").after('<div id="open" style="display: none;">roll down</div>');
+  var hiding = $("p#hiding").text().substr(0,80) + '<a>...read more.</a>';
+  $("p#hiding").after('<p id="open" style="display: none;">' + hiding + '</p>');
+
   $("p#hiding").delay(2500).slideUp('slow', function(){    
-    $("div#open").slideDown('slow');
+    $("p#open").slideDown('slow');
   });
-  $("div#open").mouseover(function(){    
+  $("p#open").mouseover(function(){    
     $("p#hiding").slideDown('slow');
-    $("div#open").slideUp('slow');
+    $("p#open").slideUp('slow');
   });
 });
