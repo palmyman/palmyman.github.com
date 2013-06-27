@@ -4,12 +4,10 @@ title: Introduction
 group: navigation
 ---
 {% include JB/setup %}
-<p>My name is Lubomír Čuhel. I'm 23 year old IT student living in Prague and this is my personal blog and resume. My life is made of three parts: 
-  <ul>
-    <li>School - <a href="http://fit.cvut.cz/en" target="_blank">Czech technical university in Prague, faluty of IT</a></li>
-    <li>Work - Web development</li>
-    <li>Baseball - player, team captain, board member and coach at <a href="http://titans.cz" target="_blank">Tempo Titans Prague</a></li>
-  </ul>
+<p id="hiding">My name is Lubomír Čuhel. I'm 23 year old IT student living in Prague and this is my personal blog and resume. My life is made of three parts:   
+    School - <a href="http://fit.cvut.cz/en" target="_blank">Czech technical university in Prague, faluty of IT</a>,
+    Work - Web development and
+    Baseball - player, team captain, board member and coach at <a href="http://titans.cz" target="_blank">Tempo Titans Prague</a>.  
 </p>
 <h2>New posts</h2>
 
