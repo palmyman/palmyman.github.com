@@ -20,7 +20,7 @@ $(document).ready(function(){
   $("p#hiding").delay(2500).slideUp('slow', function(){    
     $("p#open").slideDown('slow');
   });
-  $("p#open").mouseover(function(){
+  $("p#open").click(function(){
     $("p#open").slideUp('slow', function(){
       $("p#hiding").slideDown('slow');  
     });
