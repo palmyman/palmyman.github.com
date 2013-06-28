@@ -17,4 +17,3 @@ group: navigation
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
-url("/assets/themes/twitter/img/baseball-akad.jpg") repeat scroll 0 0 / 100% auto transparent
