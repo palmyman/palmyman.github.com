@@ -34,16 +34,23 @@
 
   </head>
 
-  <body {% if page.url == "/it/index.html" %} class="it"{% endif %} {% if page.url == "/baseball/index.html" %} class="baseball"{% endif %}>
+  <body>
     <div class="navbar">
       <div class="navbar-inner">
         <div class="container-narrow">
           <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
           <ul class="nav">
-            <li{% if page.url == "/index.html" %} class="active"{% endif %}><a href="/">Introduction</a></li>
-            <li{% if page.url == "/it/index.html" %} class="active"{% endif %}><a href="/it">IT</a></li>
-            <li{% if page.url == "/baseball/index.html" %} class="active"{% endif %}><a href="/baseball">Baseball</a></li>            
-            <li{% if page.url == "/resume/index.html" %} class="active"{% endif %}><a href="/resume">Resume</a></li>
+            {% if page.group == "en" %}
+              <li{% if page.url == "/en/index.html" %} class="active"{% endif %}><a href="/en">Blog</a></li>
+              <li{% if page.url == "/en/about-me/index.html" %} class="active"{% endif %}><a href="/en/about-me">About me</a></li>                        
+              <li{% if page.url == "/en/resume/index.html" %} class="active"{% endif %}><a href="/en/resume">Resume</a></li>
+              <li><a href="/">Czech</a></li>
+            {% else %}
+              <li{% if page.url == "/index.html" %} class="active"{% endif %}><a href="/">Blog</a></li>
+              <li{% if page.url == "/o-mne/index.html" %} class="active"{% endif %}><a href="/o-mne">O mně</a></li>                        
+              <li{% if page.url == "/zivotopis/index.html" %} class="active"{% endif %}><a href="/zivotopis">Životopis</a></li>
+              <li><a href="/en/">English</a></li>
+            {% endif %}
           </ul>
         </div>
       </div>

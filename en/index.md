@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Resume"
+title: "Blog"
 description: ""
-group: navigation
+group: en
 ---
 {% include JB/setup %}
-<p>I have </p>
+<p>In English</p>
